@@ -202,6 +202,7 @@ export const draggableModalReducer = (state: ModalsState, action: Action): Modal
             }
         }
         case 'mount':
+            const newHeight = state.windowSize.height-180;
             return {
                 ...state,
                 maxZIndex: state.maxZIndex + 1,
@@ -209,8 +210,9 @@ export const draggableModalReducer = (state: ModalsState, action: Action): Modal
                     ...state.modals,
                     [action.id]: {
                         ...initialModalState,
+                        height: newHeight,
                         x: state.windowSize.width / 2 - initialModalState.width / 2,
-                        y: state.windowSize.height / 2 - initialModalState.height / 2,
+                        y: newHeight / 2 - initialModalState.height / 2,
                         zIndex: state.maxZIndex + 1,
                     },
                 },

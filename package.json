@@ -1,14 +1,14 @@
 {
-    "name": "ant-design-draggable-modal",
-    "version": "0.0.13",
+    "name": "ant-design-draggable-modal-irn",
+    "version": "0.0.1",
     "description": "Modal from Ant Design, draggable.",
-    "homepage": "https://github.com/DylanVann/ant-design-draggable-modal#readme",
+    "homepage": "https://github.com/vahidirn/ant-design-draggable-modal-irn#readme",
     "repository": {
         "type": "git",
-        "url": "https://github.com/DylanVann/ant-design-draggable-modal.git"
+        "url": "https://github.com/vahidirn/ant-design-draggable-modal-irn.git"
     },
     "license": "MIT",
-    "author": "DylanVann",
+    "author": "VahidIrn",
     "files": [
         "dist"
     ],
@@ -16,7 +16,6 @@
     "module": "dist/index.es.js",
     "scripts": {
         "build": "rollup -c",
-        "prepublishOnly": "cp ../../README.md ./",
         "lint": "eslint 'src/**/*.{ts,tsx}'",
         "start": "rollup -c -w",
         "test": "jest"
